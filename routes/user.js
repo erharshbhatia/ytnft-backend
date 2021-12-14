@@ -12,6 +12,7 @@ router.get("/", (req, res) => {
 
 // user id is the email of user
 router.get('/user/:userId', (req, res)=>{
+  console.log(req.params.userId)
     User.findOne({email: req.params.userId})
     .populate('mintedVideos')
     .then(savedUser=> res.json(savedUser))
