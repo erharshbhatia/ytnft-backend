@@ -17,9 +17,8 @@ const app=express()
 
   
   
-
+app.use(cors())
 app.use(express.json())
-//app.use(cors())
 app.use(require('./routes/user'))
 app.use(require('./routes/video'))
 
