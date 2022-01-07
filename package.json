@@ -4,8 +4,9 @@
   "description": "get and post service for tokenids",
   "main": "index.js",
   "scripts": {
+    "watch": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "index.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,8 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^6.1.1"
+    "mongoose": "^6.1.1",
+
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
