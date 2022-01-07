@@ -4,15 +4,13 @@
   "description": "get and post service for tokenids",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon index.js",
+    "watch": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm start"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@sentry/node": "^6.16.1",
-    "@sentry/tracing": "^6.16.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
