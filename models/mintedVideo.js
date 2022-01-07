@@ -33,8 +33,28 @@ const mintedVideoSchema = new mongoose.Schema({
     ownerEmail: {
         type: String,
         required: true
+    },
+    nftDescription: {
+        type: String
+    },
+    nftImage: {
+        type: String
+    },
+    nftName: {
+        type: String
+    },
+    externalUrl: {
+        type: String
+    },
+    nftAttributes: {
+        type: String
     }
 })
+// description
+// attributes array= containing json of {trait_type, value}
+// external_url
+// image_nft
+// name_nft
 
 
 mongoose.model("MintedVideo", mintedVideoSchema)
