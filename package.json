@@ -4,8 +4,8 @@
   "description": "get and post service for tokenids",
   "main": "index.js",
   "scripts": {
-    "watch": "nodemon ./index.js", 
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "watch": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",

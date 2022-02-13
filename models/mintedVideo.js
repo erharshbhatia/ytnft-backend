@@ -34,21 +34,10 @@ const mintedVideoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    nftDescription: {
-        type: String
-    },
-    nftImage: {
-        type: String
-    },
-    nftName: {
-        type: String
-    },
-    externalUrl: {
-        type: String
-    },
-    nftAttributes: {
-        type: String
-    }
+   openSeaData: {
+    type: ObjectId, 
+    ref: "OpenSeaData"
+   }
 })
 // description
 // attributes array= containing json of {trait_type, value}

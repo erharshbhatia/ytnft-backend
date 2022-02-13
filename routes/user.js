@@ -11,6 +11,7 @@ router.get("/", (req, res) => {
 // user put for videos array
 
 // user id is the email of user
+// this will get the user 
 router.get('/user/:userId', (req, res)=>{
   console.log(req.params.userId)
     User.findOne({email: req.params.userId})
